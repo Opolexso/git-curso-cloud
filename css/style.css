@@ -1,0 +1,495 @@
+
+/*------------ GENERAL------------ */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #161821;
+    background-image: url(../images/main/shadow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*------------ CSS NAV------------ */
+
+.navegacion-container{
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo img{
+    float: left;
+    height: 60px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.menu-left{
+    float: left;
+    margin: 10px 50px;
+}
+.menu-right{
+    float: right;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0px 20px;
+    display: flex;
+    color: #fff;
+}
+
+
+.menu ul li a{
+    display: block;
+    margin: 10px 25px;
+    text-decoration: none;
+    font-weight: 200;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 25px;
+}
+
+
+.menu ul li a:hover{
+    border-bottom: 1px solid #828282;
+    color: #dc721f;
+    font-size: 16px;
+    transition: ease-out 0.4;
+}
+
+
+.search-box{
+    height: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    margin: 10px 50px;  
+}
+
+input[type=search]{
+    width: 170px;
+    background: transparent;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+/*------------ CONTAINER MAIN------------ */
+
+.slider-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.slider-box{
+    margin: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slider-text{
+    flex-basis: 400px;
+    color: #fff;
+}
+
+.slider-text p{
+    color: rgba(110, 105, 105, 1.00);
+    line-height: 20px;
+}
+
+h6{
+    font-size: 15px;
+    word-spacing: 5px;
+    color: #dc721f;
+    line-height: 20px;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-size: 50px;
+    word-spacing: 2px;
+}
+
+.slider-img{
+    height: 450px;
+}
+
+.slider-img a img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+.categories{
+    display: flex;
+}
+
+.categories select{
+    width: 90px;
+    height: 40px;
+    border: 2px solid #828282;
+    background: black;
+    box-sizing: border-box;
+    color: #fff;
+    outline: none;
+    margin-right: 20px;
+    margin-left: 0px ;
+    
+}
+
+.categories option{
+    background: #fff;
+    text-align: center;
+    color: #000000;
+}
+
+.categories a{
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    border: 2px solid #dc721f;
+    width: 90x;
+    height: 40px;
+    color: #dc721f;
+    box-sizing: border-box;
+}
+
+.categories a:hover{
+    color: #000;
+    background: #fff;
+    transition: ease-out 0.3s;
+}
+
+.cart{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    background-color: rgba(54, 53, 53, 1.00);
+    border: 1px solid rgba(54, 53, 53, 1.00);
+    border-radius: 3px;
+}
+
+
+
+.cart{
+    cursor: pointer; 
+}
+
+.cart:hover{
+    background: #dc721f;
+    background: #fff;
+    transition: ease-out 0.2s;
+}
+.cart a{
+    text-decoration: none;
+    color: #dc721f;
+    word-spacing: 5px;
+}
+
+.brand img{
+    position: absolute;
+    left: 70px;
+    bottom: 15px;
+    box-sizing: border-box;
+    height: 35px;
+}
+
+
+/* ------------ MENSAJE -------------- */ 
+
+.message{
+    background: #fff;
+    margin-top: 200px;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow:  column nowrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+.message h1{    
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.message .btns{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.message .btns a{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    width: 20%;
+    text-decoration: none;
+}
+
+
+
+/* ------------ PRODUCTS -------------- */ 
+.container{
+    width: 100%;
+    position: relative;
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 100%;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.container .card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #96dc28;
+    clip-path: circle(65px at 100% 0%);
+
+}
+
+
+.container .card::after{
+    content: "NIKE";
+    position: absolute;
+    top: 20%;
+    left: -3%;
+    font-size: 180px;
+    color: rgba(255,255,255,0.04);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.container .card .imgBox{
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    height: 220px;
+}
+
+.container .card .contentBx {
+    margin-top: 50%;
+    text-align: center;
+    
+}
+
+.container .card .contentBx h2{
+    color: #fff;
+    position: relative;
+    /*EDIT RELATIVE*/
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 900000;
+}
+
+
+.container .card .contentBx .size h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.container .card .contentBx .size{
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;    
+}
+
+.container .card .contentBx .size span {
+    background: white;
+    color: #000;
+    height: 26px;
+    width: 26px;
+    padding: 10px;
+    border-radius: 5px;
+}  
+
+span.span-size{
+    cursor: pointer;
+}
+
+.container .card .contentBx .color h3{
+    color: #fff;
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.container .card .contentBx .color span{
+    background: white;
+    color: #ff0;
+    width: 20px;
+    margin:  0 5px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/*------------ HIJOS SPAN----------------*/
+.container .card .contentBx .color span:nth-child(2){
+    background: #96dc28;
+}
+
+.container .card .contentBx .color span:nth-child(3){
+    background: #03a9f4 ;
+}
+
+.container .card .contentBx .color span:nth-child(4){
+    background: #e91e63;
+}
+
+.container .card .contentBx a{
+    background: white;
+   text-decoration: none;
+   color: black;
+   border-radius: 5px;
+   padding: 20px 25px;
+}
+
+.container .card .contentBx a:hover{
+    background: black;
+    color: white;
+   
+}
+
+/* ------------ VOLVER ARRIBA -------------- */ 
+
+.btn-volver-arriba{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 30%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    margin-right: 60px;
+    transition: all .4s ease;
+  }
+  
+  .btn-volver-arriba a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    text-align: center;
+    transition: all .4s ease;
+  }
+  
+  .btn-volver-arriba a i{
+    font-size: 1rem;
+    color: #fff;
+    line-height: 40px;
+    transition: all .4s ease;
+  }
+  
+
+  /*------------ FOOTER------------ */
+
+.pie{
+    background: black;
+    margin-top: 20px;
+}
+  
+  
+.row-footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.pie .container-footer .row-footer .section4{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.pie h3{
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+  
+.pie h6{
+    text-align: center;
+    color: grey;
+    padding: 10px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+  
+.pie h6:hover{
+    color: #0089E0;
+    transition: 0.5s ease;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.pie a i{
+    padding: 50px 0;
+    padding-left: 20px;
+    font-size: 30px;
+}
+  
+.pie a i:hover{
+    color: #0089E0 !important;
+  
+}
